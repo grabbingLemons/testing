@@ -1,3 +1,8 @@
+--[[
+  Error:
+   "Unable to create an Instance of type \"Textbutton\""
+]]
+
 local CoreGui = game:GetService("CoreGui")
 local CorePackages = game:GetService("CorePackages")
 local Roact = getrenv().require(CorePackages.Roact)
@@ -47,7 +52,7 @@ local charGUI =
                         BackgroundTransparency = 1,
                         Size = UDim2.fromScale(1, 1),
                     }, {
-                        _button = Roact.createElement("Textbutton", {
+                        _button = Roact.createElement("TextButton", {
                             Font = Enum.Font.Highway,
                             Text = "Execute",
                             TextColor3 = Color3.fromHSV(0,0,1),
